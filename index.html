@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black jak game</title>
+    <link rel="stylesheet" href="blackjak.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="containers">
+        <div class="blackjak-head">
+            <h1 style="text-transform: uppercase;"> Black jak game</h1>
+            <h2><span id="resulzShow">let's play</span></h2>
+        </div>
+        <div class="blackjal-body">
+            <div id="yourDiv"> <h2> you :<span id="your-Score">0</span></h2></div>
+            <div id="dealersDiv"><h2> Dealers :<span id="dealers-score">0</span></h2></div> 
+        </div>
+        <div class="blackjak-btns">
+            <button class="btn-lg btn-primary" id="hitBtn">Hit</button>
+            <button class='btn-lg btn-warning' id="standBtn">Stand</button>
+            <button class="btn-lg btn-success" id="delBtn">Deal</button>
+        </div>
+        <div class="blackjak-tables">
+            <table>
+                <tr>
+                    <th>win</th>
+                    <th>Lost</th>
+                    <th>Drow</th>
+                </tr>
+                <tr>
+                    <td id=winNumber>0</td>
+                    <td id=lostNumber>0</td>
+                    <td id=droeNumber>0</td>
+    
+                </tr>
+            </table>
+           
+        </div>
+    </div>
+    <script src="blackjak.js"></script>
+</body>
+</html>
